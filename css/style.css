@@ -54,6 +54,8 @@ img
 
 .btn {
   display: inline-block;
+  min-width: 260px;
+  text-align: center;
   background-color: var(--primary);
   color: #fff;
   padding: 12px 38px;
@@ -198,6 +200,15 @@ img
   margin-bottom: 30px;
   color: #777;
 }
+.lead-cta-wite .lead-cta-heading
+{
+  color:#fff;
+}
+.lead-cta-wite .lead-cta-text
+{
+  border-color: #fff;
+  color:#fff;
+}
 
 /* features start */
 
@@ -244,6 +255,41 @@ img
 
 /* features end */
 
+/* promo start */
+
+.promo {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.promo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pomo-img {
+  width: 400px;
+  height: 600px;
+  object-fit: cover;
+}
+
+/* promo end */
+
+/* runners start */
+.runners {
+  padding-top: 240px;
+  padding-bottom: 240px;
+  background-image: url(../img/runners.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.lead-cta-runners {
+  margin-left: auto;
+}
+/* runners end */
+
 /* css retina */
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -255,6 +301,10 @@ only screen and (                min-resolution: 2dppx) {
 
   .hero
   {
-    background-image: url(../img/intro-bg@2x.jpg);
+    background-image: url("../img/intro-bg@2x.jpg");
+  }
+  .runners
+  {
+    background-image: url("../img/watch-in-hand@2x.jpg");
   }
 }
